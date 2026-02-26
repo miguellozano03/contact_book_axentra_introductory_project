@@ -1,0 +1,26 @@
+info:
+  name: create_contact_3
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{host}}/api/v1/contacts"
+  body:
+    type: json
+    data: |-
+      {
+        "first_name": "Jane",
+        "last_name": "Hopper",
+        "phone_no": "+13175550111",
+        "email": "011@hawkins.lab",
+        "description": "Especialista en seguridad y búsqueda de personas desaparecidas.",
+        "outlet_id": "SPEC_11"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

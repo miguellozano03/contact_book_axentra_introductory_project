@@ -1,0 +1,26 @@
+info:
+  name: create_contact_2
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{host}}/api/v1/contacts"
+  body:
+    type: json
+    data: |-
+      {
+        "first_name": "Walter",
+        "last_name": "White",
+        "phone_no": "+15055550123",
+        "email": "heisenberg@blueice.com",
+        "description": "Proveedor de productos químicos de alta pureza. Muy puntual.",
+        "outlet_id": "CHEM_99"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

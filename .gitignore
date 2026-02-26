@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+.venv/
+env/
+env.bak/
+.env
+.env.local
+
+# FastAPI / Web specific
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# SQLITE
+*.sqlite3

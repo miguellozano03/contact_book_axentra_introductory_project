@@ -1,0 +1,23 @@
+info:
+  name: edit_contact
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{host}}/api/v1/contacts/6"
+  body:
+    type: json
+    data: |-
+      {
+        "first_name": "Walter",
+        "last_name": "Lambert",
+        "description": "Proveedor de productos químicos (ahora bajo nueva administración)."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
